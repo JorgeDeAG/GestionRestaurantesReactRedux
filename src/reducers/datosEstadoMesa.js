@@ -1,9 +1,6 @@
 import { CAMBIA_ESTADO_MESA } from "../constantes/constantes.js";
 
-var datosInicialesMesa = [];
-for (let i = 0; i < 16; i++) {
-  datosInicialesMesa.push([]);
-}
+var datosInicialesMesa = new Array(16).fill(false);
 
 const datosEstadoMesa = (estado = datosInicialesMesa, accion) => {
   switch (accion.type) {

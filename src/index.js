@@ -43,14 +43,14 @@ const getTotalBill = () => {
   var tableItems = getTableItems();
   var totalBill = 0;
   for (let i = 0; i < tableItems.length; i++) {
-    totalBill += tableItems[i].price;
+    totalBill += tableItems[i].precio;
   }
   return totalBill;
 };
 
-const getMoneyEarned = () => {
+const getDineroGanado = () => {
   var state = store.getState();
-  return state.moneyEarned;
+  return state.dineroGanado;
 };
 
 const checkOut = () => {
@@ -65,7 +65,7 @@ store.subscribe(() => {
   console.log(`Table Availability Status: ${getdatosEstadoMesa()}`);
   console.log(`Selected Table Items List:`, getTableItems());
   console.log(`Selected Table Bill: $${getTotalBill()}`);
-  console.log(`Total Money Earned: $${getMoneyEarned()}`);
+  console.log(`Total Dinero Ganado: $${getDineroGanado()}`);
   console.log();
 });
 
