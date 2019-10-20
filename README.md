@@ -1,2 +1,0 @@
-# GestionRestaurantesReactRedux
-Created with CodeSandbox
